@@ -42,7 +42,7 @@
                     <?php foreach($retorno->fetchall() as $value) { ?>
                         <tr>
                             <td> <?php echo $value['id'] ?>   </td> 
-                            <td> <?php echo $value['nomealuno']?>  </td> 
+                            <td> <?php echo $value['nome']?>  </td> 
                             <td> <?php echo $value['idade']?> </td> 
                             <td> <?php echo $value['endereco']?> </td> 
                             <td> <?php echo $value['datanascimento']?> </td>
@@ -61,7 +61,7 @@
                             <td class="layoutbotao">
                                <form method="POST" action="altaluno.php">
                                     <input name="id" type="hidden" value="<?php echo $value['id'];?>"/>
-                                    <input name="nome" type="hidden" value="<?php echo $value['nomealuno'];?>"/> 
+                                    <input name="nome" type="hidden" value="<?php echo $value['nome'];?>"/> 
                                     <input name="idade" type="hidden" value="<?php echo $value['idade'];?>"/>
                                     <input name="endereco" type="hidden" value="<?php echo $value['endereco'];?>"/>
                                     <input name="datanascimento" type="hidden" value="<?php echo $value['datanascimento'];?>"/>
