@@ -7,7 +7,7 @@ require_once('../conexao.php');
 ##cadastrar
 if(isset($_GET['cadastrar'])){
         ##dados recebidos pelo metodo GET
-        $nome = $_GET["nomealuno"];
+        $nome = $_GET["nome"];
         $idade = $_GET["idade"];
         $endereco = $_GET["endereco"];
         $datanascimento = $_GET["datanascimento"];
@@ -22,7 +22,7 @@ if(isset($_GET['cadastrar'])){
        
 
         ##codigo SQL
-        $sql = "INSERT INTO aluno(nomealuno,idade,endereco, datanascimento, estatus) 
+        $sql = "INSERT INTO aluno(nome,idade,endereco, datanascimento, estatus) 
                 VALUES('$nome','$idade','$endereco', '$datanascimento', '$estatus')";
 
         ##junta o codigo sql a conexao do banco
@@ -48,14 +48,14 @@ if (isset($_POST['update'])) {
    
     
     // Código SQL
-    $sql = "UPDATE aluno SET nomealuno = :nomealuno, idade = :idade, endereco = :endereco, datanascimento = :datanascimento, estatus = :estatus WHERE id = :id";
+    $sql = "UPDATE aluno SET nome = :nome, idade = :idade, endereco = :endereco, datanascimento = :datanascimento, estatus = :estatus WHERE id = :id";
    
     // Junta o código SQL à conexão do banco
     $stmt = $conexao->prepare($sql);
 
     // Define os parâmetros e seus tipos
     $stmt->bindParam(':id', $id, PDO::PARAM_INT);
-    $stmt->bindParam(':nomealuno', $nome, PDO::PARAM_STR);
+    $stmt->bindParam(':nome', $nome, PDO::PARAM_STR);
     $stmt->bindParam(':idade', $idade, PDO::PARAM_INT);
     $stmt->bindParam(':endereco', $endereco, PDO::PARAM_STR);
     $stmt->bindParam(':datanascimento', $datanascimento, PDO::PARAM_STR);
