@@ -16,8 +16,8 @@
       <form method="GET" action="crudaluno.php" class="form-cadastro">
 
         <div class="preenchimento-dados">
-          <label for="nomealuno">Nome:
-          <input type="text" name="nomealuno" id="um" required></label>
+          <label for="nome">Nome:
+          <input type="text" name="nome" id="um" required></label>
         
         <label for="idade">Idade:
         <input type="number" name="idade" id="um" min="0" required>
