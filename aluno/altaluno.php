@@ -30,7 +30,7 @@
    $array_retorno = $retorno->fetch();
    
    ##armazena retorno em variaveis
-   $nome = $array_retorno['nomealuno'];
+   $nome = $array_retorno['nome'];
    $idade = $array_retorno['idade'];
    $endereco = $array_retorno['endereco'];
    $datanascimento = $array_retorno['datanascimento'];
