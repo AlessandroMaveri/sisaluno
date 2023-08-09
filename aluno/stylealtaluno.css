@@ -1,0 +1,98 @@
+body{
+  margin: 40px;
+  padding: 0px;
+}
+
+.fundo {
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  
+ 
+
+}
+
+.planodefundo {
+  padding: 35px;
+  background-color: brown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  -webkit-box-shadow: 14px 17px 39px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: 14px 17px 39px -10px rgba(0,0,0,0.75);
+box-shadow: 14px 17px 39px -10px rgba(0,0,0,0.75);
+}
+#but, #cadastrar{
+    display: inline-block;
+  border: none;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  transition-duration: 0.4s;
+    cursor: pointer;
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+
+  
+}
+
+#but > a, #cadastrar{
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+#but:hover, #cadastrar:hover{
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+.preenchimento-dados{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  
+ 
+  
+}
+
+.preenchimento-dados > input{
+  font-weight: BOLD;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 0, 0), 0 0 0px rgb(0, 0, 0);
+}
+
+.form-cadastro{
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  
+}
+#um{
+  
+  width: 300px;
+  height: 25px;
+  display: block;
+
+}
+.radio{
+  font-weight: BOLD;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 0, 0), 0 0 0px rgb(0, 0, 0);
+  gap: 8px;
+
+}

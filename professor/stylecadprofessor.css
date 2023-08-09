@@ -1,0 +1,95 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.fundo {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  
+ 
+
+}
+
+.planodefundo {
+  padding: 50px;
+  background-color: brown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  
+  -webkit-box-shadow: 14px 17px 39px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: 14px 17px 39px -10px rgba(0,0,0,0.75);
+box-shadow: 14px 17px 39px -10px rgba(0,0,0,0.75);
+}
+.button, #cadastrar{
+    display: inline-block;
+  border: none;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  transition-duration: 0.4s;
+    cursor: pointer;
+
+  
+}
+
+.button > a, #cadastrar{
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+}
+
+.button:hover, #cadastrar:hover{
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+.preenchimento-dados{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  
+ 
+  
+}
+
+.preenchimento-dados > LABEL{
+  font-weight: BOLD;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 0, 0), 0 0 0px rgb(0, 0, 0);
+}
+
+.form-cadastro{
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  
+}
+.um{
+  
+  width: 300px;
+  height: 25px;
+  display: block;
+
+}
+.radio{
+  font-weight: BOLD;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 0, 0), 0 0 0px rgb(0, 0, 0);
+  gap: 8px;
+
+}
